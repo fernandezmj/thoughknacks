@@ -9,7 +9,7 @@ class CreateVideos < ActiveRecord::Migration
     	t.string :video_link
     	t.string :thumbnail
     	t.integer :category_id
-      t.timestamps null: false
+     	t.timestamps null: false
     end
   end
 end
