@@ -1,0 +1,5 @@
+= form_for @category, :html => {:multipart => true} do |f|
+	= f.text_field :title, placeholder: "Title"
+
+	= f.file_field :image, name: "category[image]"
+	= f.submit

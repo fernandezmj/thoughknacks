@@ -32,6 +32,9 @@ gem 'rspec-rails', '~> 3.0'
 gem 'capybara'
 gem 'jquery-ui-rails'
 gem 'bootstrap-datepicker-rails'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'rmagick'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
