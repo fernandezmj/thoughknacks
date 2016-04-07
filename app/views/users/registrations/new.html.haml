@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container
   .row.centered-form
     %h2 Sign up
@@ -27,3 +28,38 @@
       .actions
         = f.submit "Sign up"
     = render "users/shared/links"
+=======
+%h2 Sign up
+= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+  = devise_error_messages!
+  .control-label
+    = f.label "First name"
+  .input    
+    = f.text_field :first_name
+  .field
+    = f.label "Last name"
+    = f.text_field :last_name
+  .field
+    = f.label :email
+    = f.email_field :email, autofocus: true
+  .field
+    = f.label :birthday
+    = f.text_field :birthday, class: 'datepicker'
+  .field
+    = f.label :password
+    - if @minimum_password_length
+      %em
+        (#{@minimum_password_length} characters minimum)
+    = f.password_field :password, autocomplete: "off"
+  .field
+    = f.label :password_confirmation
+    = f.password_field :password_confirmation, autocomplete: "off"
+  .actions
+    = f.submit "Sign up"
+= render "users/shared/links"
+
+:javascript
+   $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+>>>>>>> develop
