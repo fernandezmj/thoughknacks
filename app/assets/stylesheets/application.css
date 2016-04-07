@@ -14,20 +14,7 @@
  *= require_tree .
  *= require bootstrap-datepicker
  */
-<<<<<<< HEAD
 @import 'bootstrap';
 @import 'bootstrap/theme';
-
-.alert-notice {
-  @extend .alert-success;
-}
-
-.alert-alert {
-  @extend .alert-warning;
-}
-=======
-
 @import "static_pages";
 @import "bootstrap-sprockets";
-@import "bootstrap";
->>>>>>> develop
