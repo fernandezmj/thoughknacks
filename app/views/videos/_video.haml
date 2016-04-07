@@ -1,0 +1,14 @@
+.col-md-4.portfolio-item
+  %img.img-responsive
+    = image_tag video.thumbnail_url(:thumb)
+  %h3
+    = link_to video_path(video) do
+      = video.title
+  %p 
+    = video.description
+
+    = link_to 'Edit', edit_video_path(video)
+  
+    = link_to "Delete", video_path(video),
+          data: { confirm: "Are you sure you want to delete #{video.title}" },
+          method: :delete

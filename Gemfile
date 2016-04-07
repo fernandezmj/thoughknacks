@@ -36,6 +36,8 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'rmagick'
 gem "bootstrap_flash_messages"
+gem 'carrierwave-video'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

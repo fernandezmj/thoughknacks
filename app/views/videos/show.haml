@@ -1,0 +1,18 @@
+%h1 View Videos
+
+#flash_messages= flash_messages(:close, :fade)
+
+=link_to 'Upload New Videos', new_video_path
+
+%p Title: 
+=@video.title
+
+%p Video:
+/ =video_tag("#{@video.video_link_url()}",controls: true, type: "video")
+=video_tag(@video.video_link_url(:mp4), controls: true)
+
+%p Body:
+=@video.description
+
+%p Tag:
+=@video.category.title

@@ -10,6 +10,16 @@ en:
       destroy:
         warning: "Category: %{title} has been Deleted"
         error: "Category: %{title} has not been deleted"
+    videos:
+      create:  
+        success: "Video: %{title} was Uploaded."
+        error: "Video: %{title} was not Uploaded."
+      update:
+        success: "Video was Updated"
+        error: "Video was not updated"
+      destroy:
+        warning: "Video: %{title} was Deleted"
+        error: "Video: %{title} was not deleted"
     headings:
       success: "Success!"
       info: "Info!"

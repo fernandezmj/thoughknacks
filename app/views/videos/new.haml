@@ -1,0 +1,10 @@
+%h1 Upload Videos
+- if @video.errors.any?
+  %h3
+    = pluralize(@video.errors.count, "error")
+    prohibited this video from being uploaded:
+  %ul
+    - @video.errors.full_messages.each do |msg|
+      %li= msg
+
+= render "form"
