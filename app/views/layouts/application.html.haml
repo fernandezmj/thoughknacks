@@ -7,6 +7,7 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+<<<<<<< HEAD
   .container
   - flash.each do |key, value|
     %div{:class => "alert alert-#{key}"}
@@ -17,3 +18,7 @@
     %p.alert= alert
     = yield
 
+=======
+    %p.alert= alert
+    = yield
+>>>>>>> develop
