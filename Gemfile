@@ -32,11 +32,15 @@ gem 'rspec-rails', '~> 3.0'
 gem 'capybara'
 gem 'jquery-ui-rails'
 gem 'bootstrap-datepicker-rails'
+gem 'mailboxer'
+gem 'bootstrap-will_paginate'
+gem 'will_paginate'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'rmagick'
 gem "bootstrap_flash_messages"
 gem 'carrierwave-video'
+
 
 
 # Use ActiveModel has_secure_password
